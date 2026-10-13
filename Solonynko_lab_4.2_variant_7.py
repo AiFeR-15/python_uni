@@ -1,4 +1,4 @@
-text= input("Введіть будь ласка ваше речення: ")
+text=input("Введіть будь ласка ваше речення: ")
 total_sum=0
 for char in text:
     if(char.isdigit()):
