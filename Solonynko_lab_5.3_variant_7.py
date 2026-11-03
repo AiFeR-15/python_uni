@@ -16,11 +16,14 @@ for i in range(len(all_months)):
     num=1+i
     month=all_months[i]
     while True:
-        val= int(input(f"Опади '{month}; №{num} мм: "))
-        if val>-1:
-            break
-        else:
-            print("Помилка: значенння опадів не може бути від'ємне!")
+        try:
+            val= int(input(f"Опади '{month}; №{num} мм: "))
+            if val>-1:
+                break
+            else:
+                print("Помилка: значенння опадів не може бути від'ємне!")
+        except ValueError:
+            print("Помилка: введіть значення заново!")
     rainfall[num]=val
         
 season_totals={}
