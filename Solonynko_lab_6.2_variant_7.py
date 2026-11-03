@@ -18,4 +18,4 @@ try:
     print(f"Сума цифр рядка: {sum}")
 
 except AssertionError as error_msg:
-    print(error_msg)
+    print(error_msg )
