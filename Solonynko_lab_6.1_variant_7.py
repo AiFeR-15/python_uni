@@ -15,7 +15,6 @@ try:
         multiplier=-x*(2*n-3)/(2*n)
         term=term * multiplier
         n+=1
-        print(f"n={n}: mult={multiplier:.6f} and term={abs(term):.6f}\n")
     val= math.sqrt(1+x)
     error=abs(s-val)
     print("=== РЕЗУЛЬТАТИ ===")

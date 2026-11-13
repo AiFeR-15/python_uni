@@ -2,7 +2,7 @@ while True:
     try:
         num1=float(input("Num1: "))
         break
-    except ValueError as e:
+    except ValueError :
         print("Помилка! Ви ввели неправильний знак. Спробуйте ще раз!")
 while True:
     try:
